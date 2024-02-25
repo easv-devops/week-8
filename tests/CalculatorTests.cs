@@ -1,10 +1,8 @@
-using Calculator;
-
 namespace tests;
 
 public class CalculatorTests
 {
-    private ICalculator _calculator;
+    private Calculator.Calculator _calculator;
 
     [SetUp]
     public void Setup()
