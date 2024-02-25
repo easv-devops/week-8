@@ -1,0 +1,9 @@
+kind: pipeline
+type: docker
+name: integration
+
+steps:
+  - name: code-analysis
+    image: boulundeasv/dotnet-sdk-with-java
+    commands:
+      - dotnet sonarscanner begin
