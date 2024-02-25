@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  app:
+    build:
+      dockerfile: Dockerfile 
+    environment:
+      - ConnectionString=${CONNECTION_STRING}
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
